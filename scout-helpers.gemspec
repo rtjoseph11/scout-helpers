@@ -1,16 +1,16 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'scout/helpers/version'
+require 'scout-helpers/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "scout-helpers"
-  spec.version       = Scout::Helpers::VERSION
+  spec.version       = ScoutHelpers::VERSION
   spec.authors       = ["Tucker Joseph"]
   spec.email         = ["tucker@chartboost.com"]
   spec.description   = %q{helper methods for scout}
   spec.summary       = %q{helper methods for scout}
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/rtjoseph11/scout-helpers"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
