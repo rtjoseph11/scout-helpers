@@ -25,7 +25,7 @@ module ScoutHelpers
         .select {|item| item.match(category)}
         .reject {|item| item.match("#{category}_current")}
         .sort
-        .last(2)
-        .first
+        .fetch(-2)
     )
+  end
 end
